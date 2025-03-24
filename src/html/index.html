@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!-- LINK CSS - Geral Site -->
+        <link rel="stylesheet" href="/src/css/style.css">
+        <link rel="stylesheet" href="./form.css">
+    
+        <!-- LINK CSS ROOT MANUTENÇÃO RAPIDA -->
+        <link rel="stylesheet" href="/src/css/root.css">
+    
+        <!-- ICON SITE -->
+        <link rel="shortcut icon" href="/src/img/Icon-Site.png" type="image/x-icon">
+    
+        <title>Tesla Oficial</title>
+    </head>
+</head>
+
+
+<header class="navbar">
+    <div class="logo">
+        <a href="/index.html"><img src="/src/img/logo.png" alt="Tesla Logo"></a>
+    </div>
+    <nav class="menu">
+        <a href="/index.html">Salão Carros</a>
+        <a href="/src/html/index.html">Formulario De Contato</a>
+    </nav>
+</header>
+
+
+<body>
+
+    <div class="container">
+        <div class="form-container">
+            <h2>Entre em contato conosco</h2>
+            <form action="#" method="POST">
+                <div class="input-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo">
+                </div>
+                <div class="input-group">
+                    <label for="sobrenome">Sobrenome:</label>
+                    <input type="text" id="sobrenome" name="sobrenome" required placeholder="Digite seu sobrenome">
+                </div>
+                <div class="input-group">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required placeholder="Digite seu telefone">
+                </div>
+                <div class="input-group">
+                    <label for="carro">Como você quer deixar seu carro:</label>
+                    <textarea id="carro" name="carro" rows="4" required
+                        placeholder="Descreva como deseja deixar seu carro"></textarea>
+                </div>
+                <div class="input-group">
+                    <label for="imagem-carro">Escolha um dos modelos:</label>
+                    <div class="car-images">
+                        <img src="/src/img/model-s.png" alt="Tesla Model S" class="car-image">
+                        <img src="/src/img/model-x.png" alt="Tesla Model X" class="car-image">
+                        <img src="/src/img/model-3.png" alt="Tesla Model 3" class="car-image">
+                    </div>
+                </div>
+                <button type="submit">Enviar Solicitação</button>
+            </form>
+        </div>
+</body>
+</html>
